@@ -6,8 +6,6 @@ This project is implemented using the Node.js framework, so there are 2 must-hav
 
 ```npm --version```
 
-This repository will include database connectors after the finishing of - https://panorama-etti.atlassian.net/browse/TB-7
-
 
 # Environment setup
 
