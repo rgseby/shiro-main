@@ -5,19 +5,19 @@ const env     = require('../config');
 const router  = express.Router();
 
 router.get('/', cors(), (req, res) => {
-    res.status(200).send({ data: 'Health retrieved' });
+    res.status(200).send({ data: 'Health check - OK' });
 });
 
 router.post('/', cors(), (req, res) => {
-    res.status(200).send({ data: 'Health created' });
+    res.status(200).send({ data: 'Health check - OK' });
 });
 
 router.put('/', cors(), (req, res) => {
-    res.status(200).send({ data: 'Health updated' });
+    res.status(200).send({ data: 'Health check - OK' });
 });
 
 router.delete('/', cors(), (req, res) => {
-    res.status(200).send({ data: 'Health deleted' });
+    res.status(200).send({ data: 'Health check - OK' });
 });
 
 

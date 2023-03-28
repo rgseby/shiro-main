@@ -23,7 +23,7 @@ describe('Test Health route for CRUD functionality :', () => {
         expect(await response.json())
         .to.have.property('data')
         .and
-        .to.contain('Health retrieved');
+        .to.contain('Health check - OK');
     });
 
 
@@ -44,7 +44,7 @@ describe('Test Health route for CRUD functionality :', () => {
         expect(await response.json())
         .to.have.property('data')
         .and
-        .to.contain('Health created');
+        .to.contain('Health check - OK');
     });
 
 
@@ -65,7 +65,7 @@ describe('Test Health route for CRUD functionality :', () => {
         expect(await response.json())
         .to.have.property('data')
         .and
-        .to.contain('Health updated');
+        .to.contain('Health check - OK');
     });
 
 
@@ -86,7 +86,7 @@ describe('Test Health route for CRUD functionality :', () => {
         expect(await response.json())
         .to.have.property('data')
         .and
-        .to.contain('Health deleted');
+        .to.contain('Health check - OK');
     });
 
 });
