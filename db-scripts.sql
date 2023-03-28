@@ -1,0 +1,5 @@
+SHOW DATABASES;
+
+CREATE DATABASE shiro_development;
+
+CREATE DATABASE shiro_prod;
