@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "linroot",
+    "password": "Hkwtm!wvN0WRZ7wX",
+    "database": "shiro_development",
+    "host": "lin-18680-10731-mysql-primary.servers.linodedb.net",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

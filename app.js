@@ -1,6 +1,8 @@
 const express = require('express');
 const cors    = require('cors');
-const env     = require('./config')
+const env     = require('./config');
+
+const db      = require('./models');
 
 const app     = express();
 
@@ -21,4 +23,7 @@ const healthRoute     = require('./routes/Health');
 /*      Endpoints       */
 app.use('/health',     healthRoute);
 
-app.listen(env.PORT);
+
+//db.sequelize.sync().then((req) => {
+    app.listen(env.PORT);
+//});
