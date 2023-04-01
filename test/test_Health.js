@@ -3,7 +3,6 @@ const fetch   = require('node-fetch');
 const crypto  = require('crypto');
 const expect  = require('chai').expect;
 
-require('dotenv').config();
 
 describe('Test Health route for CRUD functionality :', () => {
 
