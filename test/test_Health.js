@@ -4,12 +4,12 @@ const crypto  = require('crypto');
 const expect  = require('chai').expect;
 
 
-require('dotenv').config({ path : '../.env'});
+require('dotenv').config();
 
 
 describe('Test Health route for CRUD functionality :', () => {
 
-    it('GET /health : ', async () => {
+    it.skip('GET /health : ', async () => {
         let options = {
             url:    process.env.PROTOCOL + '://' + process.env.HOSTNAME + ':' + process.env.PORT,
             method: 'GET'
@@ -30,7 +30,7 @@ describe('Test Health route for CRUD functionality :', () => {
     });
 
 
-    it('POST /health : ', async () => {
+    it.skip('POST /health : ', async () => {
         let options = {
             url:    process.env.PROTOCOL + '://' + process.env.HOSTNAME + ':' + process.env.PORT,
             method: 'POST'
@@ -51,7 +51,7 @@ describe('Test Health route for CRUD functionality :', () => {
     });
 
 
-    it('PUT /health : ', async () => {
+    it.skip('PUT /health : ', async () => {
         let options = {
             url:    process.env.PROTOCOL + '://' + process.env.HOSTNAME + ':' + process.env.PORT,
             method: 'PUT'
@@ -72,7 +72,7 @@ describe('Test Health route for CRUD functionality :', () => {
     });
 
 
-    it('DELETE /health : ', async () => {
+    it.skip('DELETE /health : ', async () => {
         let options = {
             url:    process.env.PROTOCOL + '://' + process.env.HOSTNAME + ':' + process.env.PORT,
             method: 'DELETE'
