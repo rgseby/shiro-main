@@ -4,7 +4,12 @@
     "password": "Hkwtm!wvN0WRZ7wX",
     "database": "shiro_development",
     "host": "lin-18680-10731-mysql-primary.servers.linodedb.net",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "dialectOptions": {
+	"ssl": {
+		"require": true
+	}
+    }
   },
   "test": {
     "username": "root",

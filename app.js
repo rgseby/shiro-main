@@ -24,6 +24,6 @@ const healthRoute     = require('./routes/Health');
 app.use('/health',     healthRoute);
 
 
-//db.sequelize.sync().then((req) => {
+db.sequelize.sync().then((req) => {
     app.listen(env.PORT);
-//});
+});
