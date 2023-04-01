@@ -80,6 +80,14 @@ module.exports = (sequelize, DataTypes) => {
             validate  : {
                 notEmpty: true
             }
+        },
+
+        coffee : {
+            type      : DataTypes.BOOLEAN,
+            allowNull : false,
+            valdiate  : {
+                notEmpty: true
+            }
         }
     });
 
