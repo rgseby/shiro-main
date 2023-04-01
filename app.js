@@ -1,10 +1,10 @@
 const express = require('express');
 const cors    = require('cors');
-const env     = require('./config');
-
 const db      = require('./models');
 
 const app     = express();
+
+require('dotenv').config();
 
 require('console-stamp')(console, { 
     format: ':date(yyyy/mm/dd HH:MM:ss.l)' 
@@ -28,5 +28,5 @@ db.sequelize.sync({
     force : true
 })
 .then((req) => {
-    app.listen(env.PORT);
+    app.listen(process.env.PORT);
 });
