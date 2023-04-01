@@ -4,6 +4,9 @@ const crypto  = require('crypto');
 const expect  = require('chai').expect;
 
 
+require('dotenv').config({ path : '../.env'});
+
+
 describe('Test Health route for CRUD functionality :', () => {
 
     it('GET /health : ', async () => {
