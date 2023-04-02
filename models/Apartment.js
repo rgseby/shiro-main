@@ -18,6 +18,14 @@ module.exports = (sequelize, DataTypes) => {
             }
         },
 
+        description : {
+            type      : DataTypes.TEXT,
+            allowNull : false,
+            validate  : {
+                notEmpty: true
+            }
+        },
+
         price_per_night : {
             type      : DataTypes.INTEGER,
             allowNull : false,
