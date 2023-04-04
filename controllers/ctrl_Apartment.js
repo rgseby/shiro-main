@@ -42,5 +42,6 @@ async function insertApartment(
 
 
 module.exports = {
-    getAllApartments
+    getAllApartments,
+    insertApartment
 };
