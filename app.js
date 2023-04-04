@@ -18,12 +18,14 @@ app.use((req, res, next) => {
 });
 
 /*      Routes       */
-const apartRoute      = require('./routes/Apartment');
-const healthRoute     = require('./routes/Health');
+const apartRoute       = require('./routes/Apartment');
+const healthRoute      = require('./routes/Health');
+const maintenanceRoute = require('./routes/Maintenance');
 
 /*      Endpoints       */
-app.use('/apartment',  apartRoute);
-app.use('/health',     healthRoute);
+app.use('/apartment',   apartRoute);
+app.use('/health',      healthRoute);
+app.use('/maintenance', maintenanceRoute);
 
 
 db.sequelize.sync({

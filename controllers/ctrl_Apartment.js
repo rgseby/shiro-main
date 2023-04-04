@@ -10,6 +10,36 @@ async function getAllApartments() {
 
 }
 
+async function insertApartment(
+    name,
+    address,
+    description,
+    price_per_night,
+    free_parking,
+    wifi_network,
+    family_room,
+    smoking,
+    balcony,
+    heating,
+    garden,
+    coffee
+) {
+    await Apartment.create({
+        name,
+        address,
+        description,
+        price_per_night,
+        free_parking,
+        wifi_network,
+        family_room,
+        smoking,
+        balcony,
+        heating,
+        garden,
+        coffee
+    });
+}
+
 
 module.exports = {
     getAllApartments

@@ -5,10 +5,10 @@ const controller = require('../controllers/ctrl_Apartment');
 const router  = express.Router();
 
 
-router.get('/', cors(), (req, res) => {
+router.get('/', cors(), async (req, res) => {
     res.status(200)
        .send(
-        controller.getAllApartments()
+        await controller.getAllApartments()
         );
 });
 
