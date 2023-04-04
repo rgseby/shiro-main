@@ -18,9 +18,11 @@ app.use((req, res, next) => {
 });
 
 /*      Routes       */
+const apartRoute      = require('./routes/Apartment');
 const healthRoute     = require('./routes/Health');
 
 /*      Endpoints       */
+app.use('/apartment',  apartRoute);
 app.use('/health',     healthRoute);
 
 
