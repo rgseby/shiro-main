@@ -1,6 +1,6 @@
 const express            = require('express');
 const cors               = require('cors');
-const { ctrl_Apartment } = require('../controllers');
+const { ctrl_Apartment } = require('../controllers/');
 //const controller_faq   = require('../controllers/ctrl_Apartment');
 
 const router           = express.Router()
