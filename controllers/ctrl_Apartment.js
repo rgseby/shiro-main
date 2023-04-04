@@ -1,10 +1,10 @@
 
-const { Apartment } = require('../models/dbApartment');
+const { dbApartment } = require('../models');
 
 
 async function getAllApartments() {
     
-    const Apartments = await Apartment.findAll();
+    const Apartments = await dbApartment.findAll();
 
     return Apartments;
 
@@ -24,7 +24,7 @@ async function insertApartment(
     garden,
     coffee
 ) {
-    await Apartment.create({
+    const Apartment = await dbApartment.create({
         name,
         address,
         description,
