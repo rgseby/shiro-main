@@ -1,7 +1,7 @@
 
-module.exports = async (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     
-    const Apartment = await sequelize.define('Apartment', {
+    const Apartment = sequelize.define('Apartment', {
         name : {
             type      : DataTypes.STRING,
             allowNull : false,
