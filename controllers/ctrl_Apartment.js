@@ -1,5 +1,5 @@
 
-const { dbApartment } = require('../models');
+const { dbApartment } = require('../models/dbApartment');
 
 
 async function getAllApartments() {
