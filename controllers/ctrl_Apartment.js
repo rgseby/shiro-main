@@ -1,5 +1,5 @@
 
-const Apartment = require('../models/dbApartment')();
+const Apartment = require('../models/dbApartment')(sequelize, DataTypes);
 
 
 async function getAllApartments() {
