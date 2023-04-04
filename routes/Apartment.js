@@ -35,3 +35,6 @@ router.delete('/', cors(), (req, res) => {
 
        });
 });
+
+
+module.exports = router;
