@@ -1,14 +1,15 @@
-const express = require('Express');
-const cors    = require('cors');
+const express    = require('Express');
+const cors       = require('cors');
+const controller = require('../controllers/ctrl_Apartment');
 
 const router  = express.Router();
 
 
 router.get('/', cors(), (req, res) => {
     res.status(200)
-       .send({
-
-       });
+       .send(
+        controller.getAllApartments()
+        );
 });
 
 
