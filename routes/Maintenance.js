@@ -21,7 +21,7 @@ router.post('/apartment', cors(), async (req, res) => {
         true,
         true,
         true
-    )
+    );
 
     res.status(201)
        .send('Apartment inserted');

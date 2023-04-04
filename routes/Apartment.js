@@ -13,28 +13,4 @@ router.get('/', cors(), async (req, res) => {
 });
 
 
-router.post('/', cors(), (req, res) => {
-    res.status(201)
-       .send({
-
-       });
-});
-
-
-router.put('/', cors(), (req, res) => {
-    res.status(200)
-       .send({
-
-       });
-});
-
-
-router.delete('/', cors(), (req, res) => {
-    res.status(204)
-       .send({
-
-       });
-});
-
-
 module.exports = router;
