@@ -31,9 +31,9 @@ app.use(express.static('public'));
 app.use('/images', express.static('images'));
 
 
-db.sequelize.sync({
+db.sequelize.sync(/*{
     force : true
-})
+}*/)
 .then(() => {
     console.log('Synced database.');
 })
