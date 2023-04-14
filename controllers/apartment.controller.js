@@ -35,13 +35,19 @@ exports.create = (req, res) => {
     address: 'Strada Mieilor',
     description: 'Salut',
     price_per_night: 150,
+    whole_apartment: true,
+    area_apartment: 54,
+    private_kitchen: true,
+    private_bathroom: true,
+    attraction_point: true,
+    city_view: true,
+    air_conditioning: true,
+    tv_flat: true,
     free_parking: true,
     wifi_network: true,
     family_room: true,
     smoking: true,
     balcony: true,
-    heating: true,
-    garden: true,
     coffee: true
   };
 
