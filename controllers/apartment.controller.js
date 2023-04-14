@@ -1,4 +1,5 @@
 const db        = require('../models');
+const path = require('path');
 
 const Apartment = db.apartments;
 const Op        = db.Sequelize.Op;
@@ -66,6 +67,6 @@ exports.create = (req, res) => {
 
 exports.findOne = (req, res) => {
   res.setHeader('Content-Type', 'image/png');
-  res.status(200).sendFile('poza.png', { root: '..' });
+  res.status(200).sendFile(path.join(path.dirname(filename).split(path.sep).pop(), 'poza.png'));
 }
 
