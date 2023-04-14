@@ -1,15 +1,12 @@
 const express    = require('express');
 const cors       = require('cors');
 
-const router  = express.Router();
+const router     = express.Router();
+
+const apartments = require('../controllers/apartment.controller');
 
 
-router.get('/', cors(), async (req, res) => {
-    res.status(200)
-       .send(
-
-        );
-});
+router.get('/', cors(), apartments.findAll);
 
 
 module.exports = router;
