@@ -1,12 +1,17 @@
-const dbConfig = require('../config/db.config');
+const dbConfig  = require('../config/db.config');
+const fs        = require('fs');
 
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
   dialect: dbConfig.dialect,
+  dialectOptions: {
+    ssl: {
+      ca: fs.readFileSync('../db-certs/shiro-db-2-ca-certificate.crt')
+    }
+  },
   operatorsAliases: false,
-  ssl: dbConfig.ssl,
 
   pool: {
     max: dbConfig.pool.max,
