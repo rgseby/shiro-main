@@ -24,6 +24,8 @@ exports.findAll = (req, res) => {
 
 // Create and Save a new Apartment
 exports.create = (req, res) => {
+  console.log(req);
+
   if (!req.body.name) {
     res.status(400).send({
       message: "Content can not be empty!"
