@@ -24,32 +24,32 @@ exports.findAll = (req, res) => {
 
 // Create and Save a new Apartment
 exports.create = (req, res) => {
-  /*if (!req.body.title) {
+  if (!req.body.name) {
     res.status(400).send({
       message: "Content can not be empty!"
     });
     return;
-  }*/
+  }
 
   const apartment = {
-    name: 'Sebastian',
-    address: 'Strada Mieilor',
-    description: 'Salut',
-    price_per_night: 150,
-    whole_apartment: true,
-    area_apartment: 54,
-    private_kitchen: true,
-    private_bathroom: true,
-    attraction_point: true,
-    city_view: true,
-    air_conditioning: true,
-    tv_flat: true,
-    free_parking: true,
-    wifi_network: true,
-    family_room: true,
-    smoking: true,
-    balcony: true,
-    coffee: true
+    name             : req.body.name,
+    address          : req.body.address,
+    description      : req.body.description,
+    price_per_night  : req.body.price_per_night,
+    whole_apartment  : req.body.whole_apartment,
+    area_apartment   : req.body.area_apartment,
+    private_kitchen  : req.body.private_kitchen,
+    private_bathroom : req.body.private_bathroom,
+    attraction_point : req.body.attraction_point,
+    city_view        : req.body.city_view,
+    air_conditioning : req.body.air_conditioning,
+    tv_flat          : req.body.tv_flat,
+    free_parking     : req.body.free_parking,
+    wifi_network     : req.body.wifi_network,
+    family_room      : req.body.family_room,
+    smoking          : req.body.smoking,
+    balcony          : req.body.balcony,
+    coffee           : req.body.coffee
   };
 
   Apartment.create(apartment)
