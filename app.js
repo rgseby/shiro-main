@@ -31,6 +31,11 @@ app.use('/maintenance', maintenanceRoute);
 db.sequelize.sync({
     force : true
 })
-.then((req) => {
-    app.listen(process.env.PORT);
+.then(() => {
+    console.log('Synced database.');
+})
+.catch((err) => {
+    console.log('Failed to sync database : ' + err.message);
 });
+
+app.listen(process.env.PORT);
