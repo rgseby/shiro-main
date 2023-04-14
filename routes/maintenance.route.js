@@ -6,7 +6,7 @@ const router     = express.Router();
 const apartments = require('../controllers/apartment.controller');
 
 
-router.post('/', cors(), apartments.create);
+router.post('/apartment', cors(), apartments.create);
 
 
 module.exports = router;
