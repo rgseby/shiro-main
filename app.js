@@ -27,6 +27,9 @@ app.use('/apartment',   apartRoute);
 app.use('/health',      healthRoute);
 app.use('/maintenance', maintenanceRoute);
 
+app.use(express.static('public'));
+app.use('/images', express.static('images'));
+
 
 db.sequelize.sync({
     force : true
