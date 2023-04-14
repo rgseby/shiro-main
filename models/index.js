@@ -8,7 +8,8 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   dialect: dbConfig.dialect,
   dialectOptions: {
     ssl: {
-      ca: fs.readFileSync('../db-certs/shiro-db-2-ca-certificate.crt')
+      //ca: fs.readFileSync('../db-certs/shiro-db-2-ca-certificate.crt')
+      rejectUnauthorized: false
     }
   },
   operatorsAliases: false,
