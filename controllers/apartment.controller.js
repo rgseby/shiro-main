@@ -30,7 +30,7 @@ exports.create = (req, res) => {
     return;
   }*/
 
-  const Apartment = {
+  const apartment = {
     name: 'Sebastian',
     address: 'Strada Mieilor',
     description: 'Salut',
@@ -45,7 +45,7 @@ exports.create = (req, res) => {
     coffee: true
   };
 
-  Apartment.create(tutorial)
+  Apartment.create(apartment)
     .then(data => {
       res.send(data);
     })
