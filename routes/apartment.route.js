@@ -6,8 +6,7 @@ const router     = express.Router();
 const apartments = require('../controllers/apartment.controller');
 
 
-router.get('/', cors(), apartments.findAll);
-
+router.get('/'    , cors(), apartments.findAll);
 router.get('/poza', cors(), apartments.findOne);
 
 
