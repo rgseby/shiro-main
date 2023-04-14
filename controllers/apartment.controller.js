@@ -67,6 +67,6 @@ exports.create = (req, res) => {
 
 exports.findOne = (req, res) => {
   res.setHeader('Content-Type', 'image/png');
-  res.status(200).sendFile(path.join(path.dirname(filename).split(path.sep).pop(), 'poza.png'));
+  res.status(200).sendFile(path.join(path.dirname('poza.png').split(path.sep).pop(), 'poza.png'));
 }
 
