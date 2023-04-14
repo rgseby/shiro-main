@@ -24,7 +24,7 @@ exports.findAll = (req, res) => {
 
 // Create and Save a new Apartment
 exports.create = (req, res) => {
-  console.log(req);
+  console.log(JSON.parse(req));
 
   if (!req.body.name) {
     res.status(400).send({
